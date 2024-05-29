@@ -1,0 +1,105 @@
+<body>
+    <style>
+        /* CSS code goes here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: orange url('path/to/your/orange-pattern-image.jpg') fixed; /* Set background pattern */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .product-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white; /* Set individual card background color to white */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #888;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Dog Food</h1>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="assets/images/Dog-food/all life stages.jpg" alt="Food 1">
+                <h2>All Life Stages</h2>
+                <p>$3.99</p>
+                <button onclick="addToCart('All Life Stages')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/Dog-food/nulo.jpg" alt="Food 2">
+                <h2>Nulo</h2>
+                <p>$12.99</p>
+                <button onclick="addToCart('Nulo')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/Dog-food/pedigree.jpg" alt="Food 3">
+                <h2>Pedigree</h2>
+                <p>$6.99</p>
+                <button onclick="addToCart('Pedigree')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/images/Dog-food/royal canin.jpg" alt="Food 4">
+                <h2>Royal Canin</h2>
+                <p>$16.99</p>
+                <button onclick="addToCart('Royal Canin')">Add to Cart</button>
+            </div>
+            
+            <!-- More product cards can be added here -->
+        </div>
+    </div>
+    <script>
+        function addToCart(productName) {
+            alert(productName + " has been added to the cart.");
+            // Additional logic for adding items to the cart can be added here
+        }
+    </script>
+</body>
+</html>

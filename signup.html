@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Page</title>
+<style>
+    body {
+        background-image: url('assets/images/hero-banner.jpg');
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background-color: #d8a869; */
+        
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #FFA500; /* Orange background */
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: #fff; /* White text */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"],
+    .form-container .login-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-container input[type="submit"],
+    .form-container .login-btn {
+        background-color: #fff; /* White background */
+        color: #FFA500; /* Orange text */
+        cursor: pointer;
+    }
+
+    @media (max-width: 500px) {
+        .form-container {
+            width: 90%;
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Signup</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-name" placeholder="Name" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <input type="submit" value="Signup">
+        </form>
+        <button class="login-btn" onclick="location.href='login.html'">Login</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        background-image: url('assets/images/hero-banner.jpg');
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background-color: #f1f1f1; */
+    }
+
+    .form-container {
+        width: 90%;
+        max-width: 400px;
+        margin: 50px auto; /* Centering the form vertically */
+        padding: 20px;
+        background-color: #FFA500; /* Orange background */
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        color: #fff; /* White text */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-container input[type="submit"] {
+        background-color: #fff; /* White background */
+        color: #FFA500; /* Orange text */
+        cursor: pointer;
+    }
+
+    @media (max-width: 500px) {
+        .form-container {
+            width: 90%;
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <input type="text" id="login-username" placeholder="Username" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>
